@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berkah Travel Wisata - Shuttle Antar Kota & Rental Carter Armada</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Pro / Free Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22',
+            },
+            whatsapp: {
+              400: '#2fe674',
+              500: '#25D366',
+              600: '#1ebd5b',
+              700: '#128C7E',
+              800: '#075E54',
+            },
+            gold: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-brand-500 selection:text-white">
+
+  <!-- TOP INFO BAR -->
+  <header class="bg-brand-950 text-emerald-100 text-xs py-2 border-b border-emerald-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+        <span class="inline-flex items-center gap-1.5 text-emerald-300 font-medium">
+          <i class="fa-solid fa-shield-halved text-xs text-gold-400"></i> Layanan Resmi Door-to-Door & Carter Terpercaya
+        </span>
+        <span class="hidden md:inline text-emerald-800">•</span>
+        <span class="hidden md:inline-flex items-center gap-1">
+          <i class="fa-solid fa-clock text-xs text-emerald-400"></i> Jadwal Berangkat Setiap Hari
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/6281219232214?text=Halo%20Admin%20Berkah%20Travel,%20saya%20ingin%20tanya%20jadwal%20dan%20tiket" 
+           target="_blank" 
+           class="text-emerald-300 hover:text-white font-bold flex items-center gap-1.5 transition">
+          <i class="fa-brands fa-whatsapp text-sm text-whatsapp-400"></i> CS WhatsApp: 0812-1923-2214
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVBAR UTAMA -->
+  <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- LOGO SRC -->
+<img 
+       src="logo.png" 
+       alt="Berkah Travel Logo" 
+       id="brandLogoImg"
+       class="w-17 h-11 rounded-2xl shadow-md ... object-cover"
+     >
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-2xl font-black tracking-tight text-slate-900">Berkah<span class="text-brand-600">Travel</span></span>
+              <span class="text-[10px] font-bold bg-brand-100 text-brand-800 px-1.5 py-0.5 rounded tracking-wide">WISATA</span>
+            </div>
+            <p class="text-[11px] text-slate-500 font-medium tracking-wide -mt-0.5">Shuttle Antar Kota & Carter Armada</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <div class="hidden lg:flex items-center space-x-1 font-semibold text-slate-600 text-sm">
+          <a href="#form-reservasi" class="px-3.5 py-2 rounded-xl text-brand-700 bg-brand-50 hover:bg-brand-100 transition flex items-center gap-2">
+            <i class="fa-solid fa-van-shuttle text-brand-600"></i> TRAVEL Antar Kota
+          </a>
+          <a href="#tentang-kami" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition flex items-center gap-2">
+            <i class="fa-solid fa-circle-info text-slate-400"></i> Tentang Berkah
+          </a>
+          <a href="#armada-kami" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition flex items-center gap-2">
+            <i class="fa-solid fa-car-side text-slate-400"></i> Pilihan Armada (10)
+          </a>
+          <a href="#tabel-tarif" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition flex items-center gap-2">
+            <i class="fa-solid fa-tags text-slate-400"></i> 93 Tarif Rute
+          </a>
+        </div>
+
+        <!-- Direct CTA WhatsApp -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <a href="https://wa.me/6281219232214?text=Halo%20Admin%20Berkah%20Travel,%20saya%20ingin%20booking%20tiket%20travel" 
+             target="_blank" 
+             class="px-4 py-2.5 rounded-xl bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold transition shadow-sm hover:shadow-emerald-500/20 flex items-center gap-2 active:scale-95">
+            <i class="fa-brands fa-whatsapp text-base"></i> Hubungi 0812-1923-2214
+          </a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button onclick="toggleMobileNav()" aria-label="Menu" class="lg:hidden p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div id="mobileNavMenu" class="hidden lg:hidden py-4 border-t border-slate-100 space-y-2">
+        <a href="#form-reservasi" onclick="toggleMobileNav();" class="block px-4 py-2.5 rounded-xl font-bold text-brand-700 bg-brand-50">
+          <i class="fa-solid fa-van-shuttle mr-2 text-brand-600"></i> TRAVEL Antar Kota
+        </a>
+        <a href="#tentang-kami" onclick="toggleMobileNav();" class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50">
+          <i class="fa-solid fa-circle-info mr-2 text-slate-400"></i> Tentang Berkah Travel Wisata
+        </a>
+        <a href="#armada-kami" onclick="toggleMobileNav();" class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50">
+          <i class="fa-solid fa-car-side mr-2 text-slate-400"></i> 10 Pilihan Armada
+        </a>
+        <a href="#tabel-tarif" onclick="toggleMobileNav();" class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50">
+          <i class="fa-solid fa-tags mr-2 text-slate-400"></i> 93 Rute Tarif Resmi
+        </a>
+        <a href="https://wa.me/6281219232214?text=Halo%20Admin%20Berkah%20Travel,%20saya%20ingin%20tanya%20tiket" 
+           target="_blank" 
+           class="block text-center py-2.5 rounded-xl bg-whatsapp-500 text-white font-bold text-sm">
+          <i class="fa-brands fa-whatsapp mr-1.5"></i> Chat WhatsApp CS
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION WITH BOOKING FORM -->
+  <section class="relative bg-slate-900 pt-10 pb-24 md:py-20 overflow-hidden">
+    <img src="shttps://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=2000&q=80" 
+         alt="Perjalanan Berkah Travel" 
+         class="absolute inset-0 w-full h-full object-cover object-center opacity-25">
+    <div class="absolute inset-0 bg-gradient-to-br from-emerald-950/95 via-slate-950/90 to-brand-950/95"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+        <div class="inline-flex items-center gap-2 py-1 px-4 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-400/30 backdrop-blur-md mb-3">
+          <i class="fa-solid fa-shield-halved"></i> 93 Rute Antar Kota Resmi Sumatera • Jawa • Bali
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+          Pesan Tiket <span class="text-gold-400">TRAVEL</span> Door-to-Door & Wisata
+        </h1>
+        <p class="mt-3 text-sm sm:text-base text-slate-200 font-normal leading-relaxed">
+          Pilih rute asal dan tujuan Anda, sistem kami akan langsung menampilkan tarif resmi otomatis. Terhubung langsung ke WhatsApp Admin 0812-1923-2214.
+        </p>
+      </div>
+
+      <!-- FORM RESERVASI TRAVEL (TRAVELOKA STYLE) -->
+      <div id="form-reservasi" class="bg-white rounded-3xl shadow-2xl p-5 sm:p-7 lg:p-8 max-w-5xl mx-auto border border-slate-100 text-slate-800">
+        
+        <div class="flex items-center gap-2 border-b border-slate-200 pb-3 mb-6">
+          <span class="px-5 py-2.5 rounded-2xl font-bold text-sm bg-brand-50 text-brand-700 flex items-center gap-2">
+            <i class="fa-solid fa-van-shuttle text-brand-600"></i> TRAVEL Antar Kota
+          </span>
+        </div>
+
+        <form id="travelBookingSearchForm" onsubmit="handleFormDirectOrder(event)" class="space-y-5">
+          
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-4 items-center">
+            
+            <!-- Kota Asal -->
+            <div class="md:col-span-4 bg-slate-50 p-3.5 rounded-2xl border border-slate-200 focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-500/20 transition">
+              <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">
+                <i class="fa-solid fa-location-crosshairs text-brand-600 mr-1"></i> Kota Asal (Jemput)
+              </label>
+              <select id="originCitySelect" onchange="onOriginCityChanged()" class="w-full bg-transparent font-bold text-slate-900 text-sm sm:text-base focus:outline-none cursor-pointer">
+                <!-- Diisi via JavaScript -->
+              </select>
+            </div>
+
+            <!-- Tombol Tukar Rute -->
+            <div class="md:col-span-1 flex justify-center -my-1 sm:my-0">
+              <button type="button" onclick="handleSwapRoute()" title="Tukar Rute Asal & Tujuan" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-brand-50 hover:text-brand-600 text-slate-600 border border-slate-200 flex items-center justify-center transition active:scale-90 shadow-sm">
+                <i class="fa-solid fa-arrow-right-arrow-left text-sm"></i>
+              </button>
+            </div>
+
+            <!-- Kota Tujuan -->
+            <div class="md:col-span-4 bg-slate-50 p-3.5 rounded-2xl border border-slate-200 focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-500/20 transition">
+              <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">
+                <i class="fa-solid fa-location-dot text-brand-600 mr-1"></i> Kota Tujuan (Antar)
+              </label>
+              <select id="destinationCitySelect" onchange="onDestinationCityChanged()" class="w-full bg-transparent font-bold text-slate-900 text-sm sm:text-base focus:outline-none cursor-pointer">
+                <!-- Diisi via JavaScript -->
+              </select>
+            </div>
+
+            <!-- Tanggal Berangkat -->
+            <div class="md:col-span-3 bg-slate-50 p-3.5 rounded-2xl border border-slate-200 focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-500/20 transition">
+              <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">
+                <i class="fa-regular fa-calendar-days text-brand-600 mr-1"></i> Tanggal Berangkat
+              </label>
+              <input type="date" id="bookingDateInput" required class="w-full bg-transparent font-semibold text-slate-900 text-sm sm:text-base focus:outline-none cursor-pointer">
+            </div>
+
+          </div>
+
+          <!-- Detail Kursi, Jam & Armada -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+            
+            <!-- Jumlah Kursi -->
+            <div class="bg-slate-50 p-3.5 rounded-2xl border border-slate-200">
+              <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">
+                <i class="fa-solid fa-users text-brand-600 mr-1"></i> Jumlah Penumpang / Kursi
+              </label>
+              <div class="flex items-center justify-between">
+                <button type="button" onclick="changeSeatCount(-1)" class="w-8 h-8 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-100 flex items-center justify-center">-</button>
+                <span id="seatCountText" class="font-bold text-slate-900 text-base">1 Kursi</span>
+                <button type="button" onclick="changeSeatCount(1)" class="w-8 h-8 rounded-xl bg-white border border-slate-200 text-slate-700 font-bold hover:bg-slate-100 flex items-center justify-center">+</button>
+              </div>
+            </div>
+
+            <!-- Jam Berangkat -->
+            <div class="bg-slate-50 p-3.5 rounded-2xl border border-slate-200">
+              <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">
+                <i class="fa-regular fa-clock text-brand-600 mr-1"></i> Jam Penjemputan
+              </label>
+              <select id="departureTimeSelect" class="w-full bg-transparent font-semibold text-slate-900 text-sm focus:outline-none cursor-pointer">
+                <option value="08:00 WIB (Pagi)">08:00 WIB (Pagi)</option>
+                <option value="10:00 WIB (Pagi)">10:00 WIB (Pagi)</option>
+                <option value="14:00 WIB (Siang)" selected>14:00 WIB (Siang)</option>
+                <option value="17:00 WIB (Sore)">17:00 WIB (Sore)</option>
+                <option value="20:00 WIB (Malam)">20:00 WIB (Malam)</option>
+              </select>
+            </div>
+
+            <!-- Pilihan Armada -->
+            <div class="bg-slate-50 p-3.5 rounded-2xl border border-slate-200">
+              <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">
+                <i class="fa-solid fa-car-side text-brand-600 mr-1"></i> Pilihan Armada
+              </label>
+              <select id="fleetTypeSelect" class="w-full bg-transparent font-semibold text-slate-900 text-sm focus:outline-none cursor-pointer">
+                <option value="Toyota Hiace Premio">Toyota Hiace Premio</option>
+                <option value="Toyota Hiace Luxury">Toyota Hiace Luxury</option>
+                <option value="Toyota Hiace Commuter">Toyota Hiace Commuter</option>
+                <option value="Toyota Innova Reborn">Toyota Innova Reborn</option>
+                <option value="Toyota Zenix">Toyota Zenix</option>
+                <option value="Toyota Innova Barong">Toyota Innova Barong</option>
+                <option value="Toyota Avanza">Toyota Avanza</option>
+                <option value="Daihatsu Xenia">Daihatsu Xenia</option>
+                <option value="Toyota Calya">Toyota Calya</option>
+                <option value="Daihatsu Sigra">Daihatsu Sigra</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- KARTU ESTIMASI HARGA OTOMATIS -->
+          <div id="livePriceCard" class="bg-gradient-to-r from-emerald-50 via-brand-50 to-teal-50 border-2 border-brand-500/30 rounded-2xl p-4 sm:p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all">
+            <div class="flex items-center gap-3.5">
+              <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl flex-shrink-0 shadow-md shadow-brand-600/20">
+                <i class="fa-solid fa-tag"></i>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold uppercase tracking-wider text-brand-800">Tarif Otomatis Terpilih:</span>
+                  <span class="bg-emerald-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full">RESMI</span>
+                </div>
+                <div class="flex flex-wrap items-baseline gap-2 mt-0.5">
+                  <span id="displaySingleFare" class="text-2xl sm:text-3xl font-black text-slate-900">Rp 40.000</span>
+                  <span class="text-xs text-slate-500 font-medium">/ orang (1 tiket)</span>
+                </div>
+                <p id="displayRouteDetail" class="text-xs text-slate-600 mt-0.5 font-medium">
+                  Rute: <strong>PALEMBANG</strong> &rarr; <strong>INDRALAYA</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="w-full md:w-auto flex flex-col sm:flex-row md:flex-col items-stretch sm:items-center md:items-end justify-between gap-2.5 border-t md:border-t-0 pt-3 md:pt-0 border-brand-200">
+              <div class="text-left sm:text-right">
+                <span class="text-[11px] text-slate-500 block">Total Estimasi (<span id="displaySeatMultiplier">1</span> Penumpang):</span>
+                <span id="displayTotalFare" class="text-xl sm:text-2xl font-black text-brand-700">Rp 40.000</span>
+              </div>
+              
+              <div class="flex flex-wrap sm:flex-nowrap gap-2 w-full sm:w-auto">
+                <button type="submit" class="w-full sm:w-auto px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-extrabold text-xs sm:text-sm rounded-xl transition shadow-md shadow-brand-600/20 flex items-center justify-center gap-2 active:scale-95">
+                  <i class="fa-solid fa-receipt"></i> Lanjutkan Pemesanan
+                </button>
+                <button type="button" onclick="sendDirectFormToWhatsApp()" class="w-full sm:w-auto px-5 py-2.5 bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-extrabold text-xs sm:text-sm rounded-xl transition shadow-md shadow-emerald-500/20 flex items-center justify-center gap-2 active:scale-95">
+                  <i class="fa-brands fa-whatsapp text-base"></i> Pesan via WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jaminan Layanan -->
+          <div class="flex flex-wrap items-center justify-between text-xs text-slate-500 pt-1 gap-2">
+            <span class="inline-flex items-center gap-1.5 text-emerald-800 bg-emerald-100/60 px-3 py-1 rounded-full font-semibold">
+              <i class="fa-solid fa-circle-check text-emerald-600"></i> Antar Jemput Door to Door
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-slate-600">
+              <i class="fa-solid fa-snowflake text-brand-600"></i> Armada Nyaman, Full AC & Bagasi Luas
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-slate-600">
+              <i class="fa-solid fa-clock text-amber-500"></i> Berangkat Tepat Waktu Tiap Hari
+            </span>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PENJELASAN MENGENAI BERKAH TRAVEL WISATA -->
+  <section id="tentang-kami" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-600 font-extrabold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
+          Profil Resmi Perusahaan
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">
+          Mengenal Berkah Travel Wisata
+        </h2>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base leading-relaxed">
+          Solusi transportasi darat terpercaya dengan komitmen kenyamanan eksekutif, ketepatan waktu, dan integritas tarif transparan bagi seluruh masyarakat.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+          <h3 class="text-2xl font-black text-slate-900 leading-snug">
+            Dedikasi Pelayanan Antar Kota & Pariwisata Nusantara
+          </h3>
+          <p>
+            <strong>Berkah Travel Wisata</strong> adalah perusahaan penyedia jasa transportasi shuttle antar kota dan rental carter armada pariwisata yang berpusat di Sumatera Selatan dan melayani koneksi lintasan antar provinsi hingga ke Pulau Jawa dan Bali.
+          </p>
+          <p>
+            Dengan filosofi nama <em>"Berkah"</em>, kami mengedepankan niat tulus untuk memberikan perjalanan yang aman, menyenangkan, penuh berkah, dan bebas dari rasa was-was. Kami memahami bahwa setiap penumpang mendambakan penjemputan tepat waktu, armada yang harum dan bersih, serta driver yang ramah dan beretika santun di jalan raya.
+          </p>
+          <p>
+            Tidak hanya melayani tiket perorangan (*seat based*), Berkah Travel Wisata juga menjadi mitra terpercaya untuk kebutuhan <strong>Drop-Off Bandara, Carter Rombongan Keluarga, Perjalanan Dinas Instansi/Perusahaan, serta Paket Wisata Tour Edukasi & Rekreasi</strong>.
+          </p>
+        </div>
+
+        <!-- Kartu Keunggulan -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-3">
+              <i class="fa-solid fa-house-chimney-user"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1">Door-to-Door Service</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Anda cukup menunggu di rumah atau titik yang disepakati. Driver kami menjemput dan mengantar sampai alamat tujuan tanpa repot ganti angkutan.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-3">
+              <i class="fa-solid fa-handshake-simple"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1">Tarif Jujur & Transparan</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Seluruh 93 tarif rute tercatat transparan sesuai standar resmi. Tidak ada pungutan tersembunyi selama perjalanan.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-xl mb-3">
+              <i class="fa-solid fa-id-card-clip"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1">Driver Berpengalaman</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Pengemudi berlisensi resmi, menguasai jalur lintas Sumatera & Tol Trans-Jawa, serta memprioritaskan keselamatan di atas kecepatan.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-3">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1">Respon WA Siaga</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Layanan Customer Service kami aktif merespon booking, info seat, hingga penjemputan khusus melalui WhatsApp 0812-1923-2214.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 10 PILIHAN ARMADA BERKAH TRAVEL -->
+  <section id="armada-kami" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-brand-600 font-extrabold text-xs uppercase tracking-widest bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+          Fasilitas Kendaraan Prima
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">
+          10 Pilihan Armada Berkah Travel Wisata
+        </h2>
+        <p class="text-slate-600 mt-2 text-sm sm:text-base leading-relaxed">
+          Mulai dari kendaraan keluarga yang hemat dan lincah, MPV eksekutif, hingga minibus mewah Hiace Luxury dengan kursi VIP. Seluruh unit selalu diservis berkala dan ber-AC sejuk.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Daihatsu Sigra -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative h-48 bg-slate-100 overflow-hidden">
+            <img src="sigra.jpg" 
+                 alt="Daihatsu Sigra Berkah Travel" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Ekonomis</span>
+            <span class="absolute bottom-3 right-3 bg-brand-700 text-white text-xs font-bold px-2.5 py-1 rounded-xl">4 - 5 Kursi</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Daihatsu Sigra</h3>
+              <p class="text-xs text-slate-500 mt-1">Mobil keluarga kompak yang lincah dan hemat bahan bakar. Sangat cocok untuk carter jarak pendek dan penjemputan praktis.</p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium">
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-snowflake text-brand-600 mr-1"></i>AC Dingin</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-suitcase text-brand-600 mr-1"></i>Bagasi Cukup</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-user-group text-brand-600 mr-1"></i>4-5 Seat</span>
+              </div>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700">Carter / Travel</span>
+              <button onclick="orderSpecificFleetViaWhatsApp('Daihatsu Sigra')" class="px-4 py-2 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold rounded-xl transition flex items-center gap-1.5 active:scale-95 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Pesan Unit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Toyota Calya -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative h-48 bg-slate-100 overflow-hidden">
+            <img src="calya.png" 
+                 alt="Toyota Calya Berkah Travel" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Efisien</span>
+            <span class="absolute bottom-3 right-3 bg-brand-700 text-white text-xs font-bold px-2.5 py-1 rounded-xl">4 - 5 Kursi</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Toyota Calya</h3>
+              <p class="text-xs text-slate-500 mt-1">Pilihan favorit untuk perjalanan ringkas antar kota terdekat seperti Palembang-Indralaya-Prabumulih dengan kenyamanan kabin Toyota.</p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium">
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-snowflake text-brand-600 mr-1"></i>Double Blower</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-shield-halved text-brand-600 mr-1"></i>Airbag</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-music text-brand-600 mr-1"></i>Audio USB</span>
+              </div>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700">Carter / Travel</span>
+              <button onclick="orderSpecificFleetViaWhatsApp('Toyota Calya')" class="px-4 py-2 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold rounded-xl transition flex items-center gap-1.5 active:scale-95 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Pesan Unit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Toyota Avanza -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative h-48 bg-slate-100 overflow-hidden">
+            <img src="avanzA.png" 
+                 alt="Toyota Avanza Berkah Travel" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-brand-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Paling Populer</span>
+            <span class="absolute bottom-3 right-3 bg-brand-700 text-white text-xs font-bold px-2.5 py-1 rounded-xl">5 - 6 Kursi</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Toyota Avanza</h3>
+              <p class="text-xs text-slate-500 mt-1">Mobil legendaris dengan suspensi empuk, handal melintasi jalur Sumatera. Luas dan nyaman untuk keluarga kecil maupun dinas.</p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium">
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-snowflake text-brand-600 mr-1"></i>AC Digital</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-bolt text-brand-600 mr-1"></i>USB Charger</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-couch text-brand-600 mr-1"></i>Kursi Reclining</span>
+              </div>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700">Reguler / Carter</span>
+              <button onclick="orderSpecificFleetViaWhatsApp('Toyota Avanza')" class="px-4 py-2 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold rounded-xl transition flex items-center gap-1.5 active:scale-95 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Pesan Unit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Daihatsu Xenia -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative h-48 bg-slate-100 overflow-hidden">
+            <img src="xenia.png" 
+               alt="Daihatsu Xenia Berkah Travel" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Nyaman</span>
+            <span class="absolute bottom-3 right-3 bg-brand-700 text-white text-xs font-bold px-2.5 py-1 rounded-xl">5 - 6 Kursi</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Daihatsu Xenia</h3>
+              <p class="text-xs text-slate-500 mt-1">Generasi terbaru dengan platform luas yang senyap, serta ruang bagasi fleksibel untuk barang bawaan penumpang.</p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium">
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-snowflake text-brand-600 mr-1"></i>AC Dingin</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-suitcase text-brand-600 mr-1"></i>Bagasi Fleksibel</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-shield-check text-brand-600 mr-1"></i>Sofa Mode</span>
+              </div>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700">Reguler / Carter</span>
+              <button onclick="orderSpecificFleetViaWhatsApp('Daihatsu Xenia')" class="px-4 py-2 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold rounded-xl transition flex items-center gap-1.5 active:scale-95 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Pesan Unit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Toyota Innova Barong -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative h-48 bg-slate-100 overflow-hidden">
+            <img src="barong.jpg" 
+                 alt="Toyota Innova Barong Berkah Travel" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Tangguh</span>
+            <span class="absolute bottom-3 right-3 bg-brand-700 text-white text-xs font-bold px-2.5 py-1 rounded-xl">6 - 7 Kursi</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Toyota Innova Barong</h3>
+              <p class="text-xs text-slate-500 mt-1">Terkenal sangat tangguh, peredam kejut mantap, dan bodi kokoh. Pilihan tepat untuk perjalanan lintas provinsi dengan kenyamanan klasik.</p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium">
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-gas-pump text-brand-600 mr-1"></i>Diesel Tangguh</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-snowflake text-brand-600 mr-1"></i>AC Triple Blower</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-couch text-brand-600 mr-1"></i>Kabin Lapang</span>
+              </div>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700">Shuttle / Carter</span>
+              <button onclick="orderSpecificFleetViaWhatsApp('Toyota Innova Barong')" class="px-4 py-2 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold rounded-xl transition flex items-center gap-1.5 active:scale-95 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Pesan Unit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Toyota Innova Reborn -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative h-48 bg-slate-100 overflow-hidden">
+            <img src="reborn.png" 
+                 alt="Toyota Innova Reborn Berkah Travel" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-brand-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Eksekutif Favorit</span>
+            <span class="absolute bottom-3 right-3 bg-brand-700 text-white text-xs font-bold px-2.5 py-1 rounded-xl">6 - 7 Kursi</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Toyota Innova Reborn</h3>
+              <p class="text-xs text-slate-500 mt-1">Standar emas kenyamanan perjalanan jarak jauh. Mesin bertenaga halus, kabin sangat senyap, dan interior modern nan elegan.</p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium">
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-volume-xmark text-brand-600 mr-1"></i>Kabin Kedap</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-wind text-brand-600 mr-1"></i>AC Otomatis</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-plug text-brand-600 mr-1"></i>Port Charger Tiap Baris</span>
+              </div>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700">Reguler / Wisata</span>
+              <button onclick="orderSpecificFleetViaWhatsApp('Toyota Innova Reborn')" class="px-4 py-2 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold rounded-xl transition flex items-center gap-1.5 active:scale-95 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Pesan Unit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Toyota Zenix -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative h-48 bg-slate-100 overflow-hidden">
+            <img src="zenix.jpg" 
+                 alt="Toyota Zenix Berkah Travel" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Generasi Baru</span>
+            <span class="absolute bottom-3 right-3 bg-brand-700 text-white text-xs font-bold px-2.5 py-1 rounded-xl">6 - 7 Kursi</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Toyota Zenix</h3>
+              <p class="text-xs text-slate-500 mt-1">Platform modern dengan suspensi lembut layaknya sedan mewah. Memberikan pengalaman berkendara paling halus tanpa hentakan.</p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium">
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-couch text-brand-600 mr-1"></i>Ultra Comfort</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-leaf text-brand-600 mr-1"></i>Suspensi Halus</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-shield-halved text-brand-600 mr-1"></i>Safety Lengkap</span>
+              </div>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700">VIP / Wisata</span>
+              <button onclick="orderSpecificFleetViaWhatsApp('Toyota Zenix')" class="px-4 py-2 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold rounded-xl transition flex items-center gap-1.5 active:scale-95 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Pesan Unit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Toyota Hiace Commuter -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative h-48 bg-slate-100 overflow-hidden">
+            <img src="hiace commuter.jpg" 
+                 alt="Toyota Hiace Commuter Berkah Travel" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Rombongan</span>
+            <span class="absolute bottom-3 right-3 bg-brand-700 text-white text-xs font-bold px-2.5 py-1 rounded-xl">11 - 14 Kursi</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Toyota Hiace Commuter</h3>
+              <p class="text-xs text-slate-500 mt-1">Minibus handal berkapasitas besar. Pilihan utama untuk rombongan instansi, wisata kantor, drop bandara, dan charter keluarga besar.</p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium">
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-users text-brand-600 mr-1"></i>14 Penumpang</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-snowflake text-brand-600 mr-1"></i>AC Ducting Atap</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-tv text-brand-600 mr-1"></i>Audio Video</span>
+              </div>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700">Rombongan / Tour</span>
+              <button onclick="orderSpecificFleetViaWhatsApp('Toyota Hiace Commuter')" class="px-4 py-2 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold rounded-xl transition flex items-center gap-1.5 active:scale-95 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Pesan Unit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Toyota Hiace Premio -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative h-48 bg-slate-100 overflow-hidden">
+            <img src="premio.png" 
+                 alt="Toyota Hiace Premio Berkah Travel" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-brand-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Eksekutif Premium</span>
+            <span class="absolute bottom-3 right-3 bg-brand-700 text-white text-xs font-bold px-2.5 py-1 rounded-xl">10 - 12 Kursi</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Toyota Hiace Premio</h3>
+              <p class="text-xs text-slate-500 mt-1">Minibus generasi modern dengan hidung panjang. Visibilitas luar biasa, suspensi empuk, dan legroom luas untuk perjalanan jauh.</p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-600 font-medium">
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-couch text-brand-600 mr-1"></i>Legroom Luas</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-volume-xmark text-brand-600 mr-1"></i>Kabin Senyap</span>
+                <span class="bg-slate-100 px-2.5 py-1 rounded-lg"><i class="fa-solid fa-bolt text-brand-600 mr-1"></i>Fast Charging</span>
+              </div>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700">Executive Shuttle</span>
+              <button onclick="orderSpecificFleetViaWhatsApp('Toyota Hiace Premio')" class="px-4 py-2 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold rounded-xl transition flex items-center gap-1.5 active:scale-95 shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i> Pesan Unit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Toyota Hiace Luxury (VIP First Class) -->
+        <div class="bg-white rounded-3xl overflow-hidden border-2 border-gold-400 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group md:col-span-2 lg:col-span-3">
+          <div class="flex flex-col lg:flex-row">
+            <div class="relative lg:w-1/2 h-60 lg:h-auto bg-slate-900 overflow-hidden">
+              <img src="luxury.jpg" 
+                   alt="Toyota Hiace Luxury Berkah Travel" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+              <span class="absolute top-4 left-4 bg-gold-500 text-slate-900 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">
+                <i class="fa-solid fa-crown mr-1"></i> KELAS PALING MEWAH (VIP)
+              </span>
+              <span class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-xl">
+                7 - 8 Captain Seat VIP
+              </span>
+            </div>
+            <div class="p-6 lg:p-8 lg:w-1/2 flex flex-col justify-between bg-white">
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-2xl font-black text-slate-900">Toyota Hiace Luxury</h3>
+                  <span class="bg-amber-100 text-amber-800 text-[11px] font-extrabold px-2 py-0.5 rounded">FIRST CLASS</span>
+                </div>
+                <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                  Dirancang khusus bagi Anda yang mengutamakan privasi, kenyamanan tanpa kompromi, dan kemewahan sekelas kabin pesawat kelas bisnis. Dilengkapi jok kulit <em>Captain Seat</em> elektrik, sandaran kaki (<em>leg rest</em>), pencahayaan ambient hangat, serta Smart Android TV.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-2 my-4 text-xs font-semibold text-slate-700">
+                  <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                    <i class="fa-solid fa-chair text-gold-500 text-sm"></i> Pilot Captain Seat & Leg Rest
+                  </div>
+                  <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                    <i class="fa-solid fa-tv text-gold-500 text-sm"></i> Smart TV & Premium Audio
+                  </div>
+                  <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                    <i class="fa-solid fa-lightbulb text-gold-500 text-sm"></i> Luxury Ambient Lighting
+                  </div>
+                  <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                    <i class="fa-solid fa-plug text-gold-500 text-sm"></i> Inverter 220V + USB Tiap Kursi
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+                <div>
+                  <span class="text-xs text-slate-500 block">Layanan Khusus:</span>
+                  <span class="text-sm font-black text-brand-700">Carter VIP Tamu Pejabat / Wisata Eksklusif</span>
+                </div>
+                <button onclick="orderSpecificFleetViaWhatsApp('Toyota Hiace Luxury')" class="px-6 py-3 bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-extrabold text-sm rounded-xl transition flex items-center justify-center gap-2 shadow-md active:scale-95">
+                  <i class="fa-brands fa-whatsapp text-lg"></i> Reservasi Hiace Luxury
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION TABEL 93 TARIF RESMI LENGKAP -->
+  <section id="tabel-tarif" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+      <div>
+        <span class="text-brand-600 font-extrabold text-xs uppercase tracking-wider flex items-center gap-1.5">
+          <i class="fa-solid fa-list-check"></i> Master Data Rute
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-1">Daftar Lengkap 93 Tarif Resmi</h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1">Transparansi tarif shuttle door-to-door Berkah Travel se-Sumatera, Jawa, hingga Bali.</p>
+      </div>
+
+      <!-- Quick Filter Buttons -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1">
+        <button onclick="filterTariffTable('ALL')" id="filterBtnAll" class="table-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-brand-600 text-white transition">
+          Semua (93)
+        </button>
+        <button onclick="filterTariffTable('PALEMBANG')" id="filterBtnPlg" class="table-filter-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">
+          Asal Palembang (26)
+        </button>
+        <button onclick="filterTariffTable('INDRALAYA')" id="filterBtnInd" class="table-filter-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">
+          Asal Indralaya (15)
+        </button>
+        <button onclick="filterTariffTable('JAWA')" id="filterBtnJawa" class="table-filter-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">
+          Rute Jawa-Bali (20)
+        </button>
+        <button onclick="filterTariffTable('SUMATERA')" id="filterBtnSum" class="table-filter-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition">
+          Lintas Sumatera (32)
+        </button>
+      </div>
+    </div>
+
+    <!-- Live Search Box Inside Table -->
+    <div class="mb-4">
+      <div class="relative max-w-md">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-slate-400 text-sm"></i>
+        <input type="text" id="tariffTableSearch" oninput="searchTariffTable()" placeholder="Ketik nama kota asal atau tujuan (contoh: Padang, Bandung, Lahat)..." class="w-full pl-10 pr-4 py-2.5 bg-white rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-500 shadow-sm">
+      </div>
+    </div>
+
+    <!-- Table Container -->
+    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+      <div class="overflow-x-auto max-h-[550px] overflow-y-auto">
+        <table class="w-full text-left text-sm text-slate-600">
+          <thead class="bg-slate-100/90 sticky top-0 z-10 text-xs uppercase text-slate-700 font-extrabold border-b border-slate-200 backdrop-blur-sm">
+            <tr>
+              <th class="px-5 py-4">No</th>
+              <th class="px-5 py-4">Kota Asal (Jemput)</th>
+              <th class="px-5 py-4"></th>
+              <th class="px-5 py-4">Kota Tujuan (Antar)</th>
+              <th class="px-5 py-4 text-right">Tarif Resmi / Orang</th>
+              <th class="px-5 py-4 text-center">Aksi Cepat</th>
+            </tr>
+          </thead>
+          <tbody id="tariffTableBody" class="divide-y divide-slate-100">
+            <!-- Rendered via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-2">
+        <span>Menampilkan <strong id="tariffCountDisplay">93</strong> rute tarif resmi.</span>
+        <span class="text-emerald-700 font-semibold flex items-center gap-1">
+          <i class="fa-solid fa-circle-check"></i> Master Data Rute Terkini (Siap Integrasi WhatsApp)
+        </span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECTION CALL TO ACTION BANTUAN OPERATOR -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-10">
+    <div class="bg-gradient-to-r from-whatsapp-800 to-whatsapp-700 rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-5">
+        <div class="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-3xl flex-shrink-0 text-emerald-300 border border-white/20">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div>
+          <span class="text-[11px] font-extrabold uppercase tracking-widest text-emerald-300">Customer Support Siaga Setiap Hari</span>
+          <h3 class="text-xl sm:text-2xl font-black mt-0.5">Rute yang Anda Cari Tidak Ada di Daftar?</h3>
+          <p class="text-xs sm:text-sm text-emerald-100 mt-1">Hubungi admin kami untuk penjemputan ke alamat pelosok atau charter rombongan khusus dengan tarif terbaik.</p>
+        </div>
+      </div>
+      <a href="https://wa.me/6281219232214?text=Halo%20Admin%20Berkah%20Travel,%20saya%20ingin%20tanya%20rute%20khusus%20penjemputan" 
+         target="_blank" 
+         class="whitespace-nowrap px-6 py-3.5 bg-white text-whatsapp-800 hover:bg-emerald-50 rounded-2xl font-black text-sm shadow-lg transition active:scale-95 flex items-center gap-2">
+        <i class="fa-brands fa-whatsapp text-lg text-emerald-600"></i> Hubungi WhatsApp 0812-1923-2214
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 divide-y divide-slate-800">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12">
+        
+        <!-- Info Brand -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <img 
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120' fill='none'><rect width='120' height='120' rx='28' fill='%23047857'/><path d='M25 78L52 32C56 25 64 25 68 32L95 78' stroke='white' stroke-width='9' stroke-linecap='round'/><path d='M38 60H82' stroke='%23f59e0b' stroke-width='8' stroke-linecap='round'/><circle cx='60' cy='32' r='8' fill='%23f59e0b'/><path d='M20 90H100' stroke='white' stroke-width='5' stroke-linecap='round' stroke-dasharray='5 5'/><circle cx='38' cy='88' r='5' fill='%23f59e0b'/><circle cx='82' cy='88' r='5' fill='%23f59e0b'/></svg>" 
+              alt="Berkah Travel Logo Footer" 
+              class="w-10 h-10 rounded-xl object-cover shadow"
+            >
+            <div>
+              <span class="text-xl font-black text-white">Berkah<span class="text-brand-500">Travel</span></span>
+              <p class="text-[10px] text-slate-400 font-medium">Shuttle & Carter Wisata</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Pusat layanan shuttle travel door-to-door dan carter pariwisata terpercaya. Mengutamakan kenyamanan armada ber-AC, kebersihan unit, dan sopir santun berpengalaman.
+          </p>
+        </div>
+
+        <!-- Rute Favorit -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-sm tracking-wide">Rute Antar Kota Populer</h4>
+          <ul class="space-y-2 text-xs">
+            <li><button type="button" onclick="quickSelectRoute('PALEMBANG', 'INDRALAYA')" class="hover:text-emerald-400 text-left transition">Palembang &rarr; Indralaya (Rp 40.000)</button></li>
+            <li><button type="button" onclick="quickSelectRoute('PALEMBANG', 'PRABUMULIH')" class="hover:text-emerald-400 text-left transition">Palembang &rarr; Prabumulih (Rp 130.000)</button></li>
+            <li><button type="button" onclick="quickSelectRoute('PALEMBANG', 'BANDUNG')" class="hover:text-emerald-400 text-left transition">Palembang &rarr; Bandung (Rp 700.000)</button></li>
+            <li><button type="button" onclick="quickSelectRoute('PALEMBANG', 'PADANG')" class="hover:text-emerald-400 text-left transition">Palembang &rarr; Padang (Rp 650.000)</button></li>
+            <li><button type="button" onclick="quickSelectRoute('TANGERANG', 'PALEMBANG')" class="hover:text-emerald-400 text-left transition">Tangerang &rarr; Palembang (Rp 600.000)</button></li>
+          </ul>
+        </div>
+
+        <!-- 10 Armada Pilihan -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-sm tracking-wide">10 Pilihan Armada</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Sigra, Calya, Avanza, Xenia, Innova Barong, Innova Reborn, Toyota Zenix, Hiace Commuter, Hiace Premio, & Hiace Luxury VIP.
+          </p>
+          <div class="pt-2">
+            <a href="#armada-kami" class="text-xs text-brand-400 hover:text-brand-300 font-bold flex items-center gap-1">
+              Lihat Spesifikasi Armada <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kontak & Pool -->
+        <div class="space-y-3 text-xs">
+          <h4 class="text-white font-bold text-sm tracking-wide">Layanan Pelanggan 24 Jam</h4>
+          <p><i class="fa-solid fa-location-dot text-brand-500 mr-1.5"></i> Pool Pusat: Jl. Kolonel H. Barlian / Simpang Bandara SMB II, Palembang</p>
+          <p><i class="fa-solid fa-phone text-brand-500 mr-1.5"></i> Hotline CS: 0812-1923-2214</p>
+          <p><i class="fa-brands fa-whatsapp text-whatsapp-500 mr-1.5"></i> WhatsApp Resmi: <strong>0812-1923-2214</strong></p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+        <p>© 2026 Berkah Travel Wisata. Seluruh Hak Cipta Dilindungi.</p>
+        <p>Layanan Shuttle Door-to-Door & Wisata Terpercaya se-Indonesia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL KONFIRMASI CHECKOUT -->
+  <div id="checkoutModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl animate-fade-in border border-slate-100">
+      
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-brand-800 to-emerald-700 px-6 py-5 text-white flex justify-between items-center">
+        <div>
+          <span class="text-[11px] font-bold tracking-wider text-emerald-200 uppercase">Konfirmasi Pemesanan Tiket</span>
+          <h3 id="modalRouteTitle" class="text-lg font-black mt-0.5">PALEMBANG &rarr; INDRALAYA</h3>
+        </div>
+        <button onclick="closeCheckoutModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body Form -->
+      <form id="checkoutForm" onsubmit="processBookingCheckout(event)" class="p-6 space-y-4">
+        
+        <!-- Summary Box -->
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs space-y-2">
+          <div class="flex justify-between">
+            <span class="text-slate-500">Jadwal Keberangkatan:</span>
+            <span id="modalScheduleInfo" class="font-bold text-slate-800">-</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Armada Pilihan:</span>
+            <span id="modalFleetInfo" class="font-bold text-slate-800">-</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Tarif Satuan Resmi:</span>
+            <span id="modalUnitFareInfo" class="font-bold text-brand-700">-</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Jumlah Tiket:</span>
+            <span id="modalSeatCountInfo" class="font-bold text-slate-800">-</span>
+          </div>
+        </div>
+
+        <!-- Passenger Details -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Nama Lengkap Penumpang</label>
+            <input type="text" id="custNameInput" required placeholder="Contoh: Ahmad Fauzi" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-brand-500 text-sm outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Nomor WhatsApp Aktif</label>
+            <input type="tel" id="custPhoneInput" required placeholder="08123456789" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-brand-500 text-sm outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Alamat Lengkap Penjemputan</label>
+          <input type="text" id="custPickupAddress" required placeholder="Contoh: Jl. Sudirman No. 45 / Depan Hotel Aryaduta" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-brand-500 text-sm outline-none">
+        </div>
+
+        <!-- Payment Method -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1.5">Pilih Cara Pembayaran</label>
+          <div class="grid grid-cols-3 gap-2 text-center text-xs">
+            <label class="border border-slate-200 rounded-xl p-2.5 cursor-pointer hover:border-brand-500 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50 transition">
+              <input type="radio" name="paymentOption" value="Bayar ke Driver (Cash)" checked class="hidden">
+              <i class="fa-solid fa-hand-holding-dollar text-base text-slate-700 block mb-1"></i>
+              <span class="font-bold">Ke Driver</span>
+            </label>
+            <label class="border border-slate-200 rounded-xl p-2.5 cursor-pointer hover:border-brand-500 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50 transition">
+              <input type="radio" name="paymentOption" value="Transfer Bank / QRIS" class="hidden">
+              <i class="fa-solid fa-qrcode text-base text-slate-700 block mb-1"></i>
+              <span class="font-bold">QRIS / Transfer</span>
+            </label>
+            <label class="border border-slate-200 rounded-xl p-2.5 cursor-pointer hover:border-brand-500 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50 transition">
+              <input type="radio" name="paymentOption" value="Lunas di Pool Agen" class="hidden">
+              <i class="fa-solid fa-store text-base text-slate-700 block mb-1"></i>
+              <span class="font-bold">Di Pool Agen</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Total Price & Actions -->
+        <div class="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div>
+            <span class="text-xs text-slate-500 block">Total Biaya:</span>
+            <span id="modalFinalPriceText" class="text-2xl font-black text-brand-600">Rp 40.000</span>
+          </div>
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <button type="submit" class="w-full sm:w-auto px-4 py-2.5 bg-brand-600 hover:bg-brand-700 text-white rounded-xl font-bold text-xs shadow-md transition active:scale-95 flex items-center justify-center gap-1.5">
+              <i class="fa-solid fa-ticket"></i> Buat E-Tiket
+            </button>
+            <button type="button" onclick="checkoutDirectToWhatsApp()" class="w-full sm:w-auto px-4 py-2.5 bg-whatsapp-500 hover:bg-whatsapp-600 text-white rounded-xl font-bold text-xs shadow-md transition active:scale-95 flex items-center justify-center gap-1.5">
+              <i class="fa-brands fa-whatsapp text-sm"></i> Kirim WhatsApp
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL SUKSES TIKET VIRTUAL -->
+  <div id="successTicketModal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 text-center shadow-2xl border border-slate-100 animate-fade-in">
+      
+      <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-3">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+
+      <h3 class="text-xl font-black text-slate-900">E-Tiket Travel Terbit!</h3>
+      <p class="text-xs text-slate-500 mt-0.5">Konfirmasikan kode booking ini langsung ke WhatsApp Admin CS.</p>
+
+      <!-- Ticket Card Layout -->
+      <div class="my-5 p-5 bg-gradient-to-b from-brand-50/50 to-slate-50 rounded-2xl border border-brand-200 text-left relative overflow-hidden">
+        
+        <div class="flex justify-between items-center pb-3 border-b border-dashed border-brand-300">
+          <div>
+            <span class="text-[10px] uppercase font-bold text-brand-700 block">Kode Booking Tiket</span>
+            <span id="ticketDisplayCode" class="font-mono text-xl font-black text-slate-900 tracking-wider">BRK-TRV-89421</span>
+          </div>
+          <div class="text-right">
+            <span class="bg-emerald-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full">TERKONFIRMASI</span>
+          </div>
+        </div>
+
+        <div class="py-3 space-y-1.5 text-xs">
+          <div class="flex justify-between">
+            <span class="text-slate-500">Nama Penumpang:</span>
+            <span id="ticketDisplayName" class="font-bold text-slate-800">-</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Rute Perjalanan:</span>
+            <span id="ticketDisplayRoute" class="font-bold text-brand-800">-</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Jadwal Keberangkatan:</span>
+            <span id="ticketDisplaySchedule" class="font-semibold text-slate-700">-</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Pilihan Armada:</span>
+            <span id="ticketDisplayFleetSeats" class="font-semibold text-slate-700">-</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500">Titik Jemput:</span>
+            <span id="ticketDisplayPickup" class="font-semibold text-slate-700 truncate max-w-[180px]">-</span>
+          </div>
+          <div class="flex justify-between pt-2 border-t border-slate-200 font-bold text-sm">
+            <span>Total Pembayaran:</span>
+            <span id="ticketDisplayTotal" class="text-brand-700 font-extrabold">-</span>
+          </div>
+        </div>
+
+        <!-- Simulated Barcode -->
+        <div class="pt-3 border-t border-dashed border-slate-300 text-center">
+          <div class="h-8 bg-slate-900 flex items-center justify-center px-4 rounded">
+            <div class="w-full flex justify-between tracking-widest text-[9px] text-white font-mono opacity-80">
+              <span>||||</span><span>||</span><span>|||||</span><span>|||</span><span>||||||</span><span>||</span><span>||||</span>
+            </div>
+          </div>
+          <span class="text-[9px] text-slate-400 font-mono mt-1 block">VERIFIED BY BERKAH TRAVEL SYSTEM</span>
+        </div>
+
+      </div>
+
+      <div class="space-y-2">
+        <button onclick="sendIssuedTicketToWhatsApp()" class="w-full py-2.5 px-4 bg-whatsapp-500 hover:bg-whatsapp-600 text-white rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 shadow">
+          <i class="fa-brands fa-whatsapp text-sm"></i> Kirim Rincian Tiket ke WhatsApp CS
+        </button>
+        <button onclick="closeSuccessTicketModal()" class="w-full py-2.5 px-4 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-bold transition">
+          Tutup
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON (POJOK KANAN BAWAH) -->
+  <a href="https://wa.me/6281219232214?text=Halo%20Admin%20Berkah%20Travel,%20saya%20ingin%20tanya%20jadwal%20dan%20booking%20travel" 
+     target="_blank" 
+     title="Hubungi Admin Berkah Travel via WhatsApp"
+     class="fixed bottom-6 right-6 z-50 bg-whatsapp-500 hover:bg-whatsapp-600 text-white px-4 py-3 rounded-full shadow-2xl flex items-center gap-2.5 hover:scale-105 active:scale-95 transition duration-200 border-2 border-white">
+    
+    <!-- Radar Badge Online -->
+    <span class="absolute -top-1 -right-1 flex h-4 w-4">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-4 w-4 bg-emerald-300 border-2 border-white"></span>
+    </span>
+
+    <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-lg">
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+    <div class="hidden sm:block text-left pr-1">
+      <span class="text-[10px] font-bold uppercase tracking-wider block opacity-90 leading-tight">Admin Online 24 Jam</span>
+      <span class="text-xs font-black leading-none">0812-1923-2214</span>
+    </div>
+  </a>
+
+  <!-- LOGIKA JAVASCRIPT LENGKAP -->
+  <script>
+    // NOMOR WHATSAPP RESMI
+    const WA_NUMBER = "6281219232214";
+
+    // MASTER DATA 93 TARIF RESMI LENGKAP
+    const TARIFF_DATA = [
+      { id: 1, origin: "PALEMBANG", destination: "INDRALAYA", price: 40000 },
+      { id: 2, origin: "PALEMBANG", destination: "KAYU AGUNG", price: 80000 },
+      { id: 3, origin: "PALEMBANG", destination: "GELUMBANG", price: 80000 },
+      { id: 4, origin: "PALEMBANG", destination: "LEMBANG", price: 90000 },
+      { id: 5, origin: "PALEMBANG", destination: "PRABUMULIH", price: 130000 },
+      { id: 6, origin: "PALEMBANG", destination: "PALI", price: 170000 },
+      { id: 7, origin: "PALEMBANG", destination: "MUARA ENIM", price: 160000 },
+      { id: 8, origin: "PALEMBANG", destination: "TANJUNG ENIM", price: 170000 },
+      { id: 9, origin: "PALEMBANG", destination: "BATURAJA", price: 170000 },
+      { id: 10, origin: "PALEMBANG", destination: "MARTAPURA", price: 200000 },
+      { id: 11, origin: "PALEMBANG", destination: "BELITANG", price: 180000 },
+      { id: 12, origin: "PALEMBANG", destination: "LAHAT", price: 180000 },
+      { id: 13, origin: "PALEMBANG", destination: "TEBING TINGGI", price: 230000 },
+      { id: 14, origin: "PALEMBANG", destination: "PAGAR ALAM", price: 200000 },
+      { id: 15, origin: "PALEMBANG", destination: "PENDOPO", price: 230000 },
+      { id: 16, origin: "PALEMBANG", destination: "SEKAYU", price: 140000 },
+      { id: 17, origin: "PALEMBANG", destination: "LUBUK LINGGAU", price: 230000 },
+      { id: 18, origin: "PALEMBANG", destination: "TUGUMULYO", price: 130000 },
+      { id: 19, origin: "PALEMBANG", destination: "JAMBI", price: 250000 },
+      { id: 20, origin: "PALEMBANG", destination: "BENGKULU", price: 280000 },
+      { id: 21, origin: "PALEMBANG", destination: "LAMPUNG", price: 280000 },
+      { id: 22, origin: "PALEMBANG", destination: "PADANG", price: 650000 },
+      { id: 23, origin: "PALEMBANG", destination: "PEKANBARU", price: 500000 },
+      { id: 24, origin: "PALEMBANG", destination: "MEDAN", price: 750000 },
+      { id: 25, origin: "PALEMBANG", destination: "JAKARTA", price: 550000 },
+      { id: 26, origin: "PALEMBANG", destination: "BANDUNG", price: 700000 },
+      { id: 27, origin: "INDRALAYA", destination: "PALEMBANG", price: 40000 },
+      { id: 28, origin: "INDRALAYA", destination: "KAYU AGUNG", price: 60000 },
+      { id: 29, origin: "INDRALAYA", destination: "PRABUMULIH", price: 100000 },
+      { id: 30, origin: "INDRALAYA", destination: "MUARA ENIM", price: 140000 },
+      { id: 31, origin: "INDRALAYA", destination: "TANJUNG ENIM", price: 150000 },
+      { id: 32, origin: "INDRALAYA", destination: "BATURAJA", price: 150000 },
+      { id: 33, origin: "INDRALAYA", destination: "LAHAT", price: 160000 },
+      { id: 34, origin: "INDRALAYA", destination: "PAGAR ALAM", price: 180000 },
+      { id: 35, origin: "INDRALAYA", destination: "LUBUK LINGGAU", price: 210000 },
+      { id: 36, origin: "INDRALAYA", destination: "JAMBI", price: 270000 },
+      { id: 37, origin: "INDRALAYA", destination: "LAMPUNG", price: 260000 },
+      { id: 38, origin: "INDRALAYA", destination: "BENGKULU", price: 300000 },
+      { id: 39, origin: "INDRALAYA", destination: "PADANG", price: 670000 },
+      { id: 40, origin: "INDRALAYA", destination: "JAKARTA", price: 570000 },
+      { id: 41, origin: "INDRALAYA", destination: "BANDUNG", price: 720000 },
+      { id: 42, origin: "PRABUMULIH", destination: "PALEMBANG", price: 130000 },
+      { id: 43, origin: "PRABUMULIH", destination: "INDRALAYA", price: 100000 },
+      { id: 44, origin: "PRABUMULIH", destination: "MUARA ENIM", price: 70000 },
+      { id: 45, origin: "PRABUMULIH", destination: "BATURAJA", price: 90000 },
+      { id: 46, origin: "PRABUMULIH", destination: "LAHAT", price: 110000 },
+      { id: 47, origin: "PRABUMULIH", destination: "LAMPUNG", price: 250000 },
+      { id: 48, origin: "PRABUMULIH", destination: "JAKARTA", price: 550000 },
+      { id: 49, origin: "MUARA ENIM", destination: "PALEMBANG", price: 160000 },
+      { id: 50, origin: "MUARA ENIM", destination: "INDRALAYA", price: 140000 },
+      { id: 51, origin: "MUARA ENIM", destination: "PRABUMULIH", price: 70000 },
+      { id: 52, origin: "MUARA ENIM", destination: "LAHAT", price: 60000 },
+      { id: 53, origin: "MUARA ENIM", destination: "JAKARTA", price: 580000 },
+      { id: 54, origin: "TANJUNG ENIM", destination: "PALEMBANG", price: 170000 },
+      { id: 55, origin: "TANJUNG ENIM", destination: "INDRALAYA", price: 150000 },
+      { id: 56, origin: "TANJUNG ENIM", destination: "JAKARTA", price: 590000 },
+      { id: 57, origin: "LAHAT", destination: "PALEMBANG", price: 180000 },
+      { id: 58, origin: "LAHAT", destination: "INDRALAYA", price: 160000 },
+      { id: 59, origin: "LAHAT", destination: "PAGAR ALAM", price: 80000 },
+      { id: 60, origin: "LAHAT", destination: "JAKARTA", price: 600000 },
+      { id: 61, origin: "PAGAR ALAM", destination: "PALEMBANG", price: 200000 },
+      { id: 62, origin: "PAGAR ALAM", destination: "INDRALAYA", price: 180000 },
+      { id: 63, origin: "PAGAR ALAM", destination: "JAKARTA", price: 620000 },
+      { id: 64, origin: "BATURAJA", destination: "PALEMBANG", price: 170000 },
+      { id: 65, origin: "BATURAJA", destination: "INDRALAYA", price: 150000 },
+      { id: 66, origin: "BATURAJA", destination: "LAMPUNG", price: 170000 },
+      { id: 67, origin: "BATURAJA", destination: "JAKARTA", price: 470000 },
+      { id: 68, origin: "LUBUK LINGGAU", destination: "PALEMBANG", price: 230000 },
+      { id: 69, origin: "LUBUK LINGGAU", destination: "BENGKULU", price: 120000 },
+      { id: 70, origin: "LUBUK LINGGAU", destination: "JAKARTA", price: 650000 },
+      { id: 71, origin: "LAMPUNG", destination: "PALEMBANG", price: 280000 },
+      { id: 72, origin: "LAMPUNG", destination: "INDRALAYA", price: 260000 },
+      { id: 73, origin: "LAMPUNG", destination: "JAKARTA", price: 250000 },
+      { id: 74, origin: "LAMPUNG", destination: "BANDUNG", price: 380000 },
+      { id: 75, origin: "JAMBI", destination: "PALEMBANG", price: 250000 },
+      { id: 76, origin: "JAMBI", destination: "PADANG", price: 320000 },
+      { id: 77, origin: "JAMBI", destination: "PEKANBARU", price: 300000 },
+      { id: 78, origin: "JAKARTA", destination: "PALEMBANG", price: 550000 },
+      { id: 79, origin: "JAKARTA", destination: "INDRALAYA", price: 570000 },
+      { id: 80, origin: "JAKARTA", destination: "PRABUMULIH", price: 550000 },
+      { id: 81, origin: "JAKARTA", destination: "BATURAJA", price: 470000 },
+      { id: 82, origin: "JAKARTA", destination: "MUARA ENIM", price: 580000 },
+      { id: 83, origin: "JAKARTA", destination: "LAHAT", price: 600000 },
+      { id: 84, origin: "JAKARTA", destination: "LAMPUNG", price: 250000 },
+      { id: 85, origin: "JAKARTA", destination: "BANDUNG", price: 180000 },
+      { id: 86, origin: "JAKARTA", destination: "SEMARANG", price: 350000 },
+      { id: 87, origin: "JAKARTA", destination: "YOGYAKARTA", price: 400000 },
+      { id: 88, origin: "JAKARTA", destination: "SURABAYA", price: 550000 },
+      { id: 89, origin: "JAKARTA", destination: "DENPASAR BALI", price: 850000 },
+      { id: 90, origin: "TANGERANG", destination: "PALEMBANG", price: 600000 },
+      { id: 91, origin: "BANDUNG", destination: "PALEMBANG", price: 700000 },
+      { id: 92, origin: "BOGOR", destination: "PALEMBANG", price: 600000 },
+      { id: 93, origin: "DEPOK", destination: "PALEMBANG", price: 580000 }
+    ];
+
+    // State Aplikasi
+    let currentSeats = 1;
+    let selectedRouteObj = null;
+    let activeTableFilter = "ALL";
+    let pendingOrderPayload = null;
+
+    // Helper Rupiah
+    function formatIDR(num) {
+      return "Rp " + Number(num).toLocaleString("id-ID");
+    }
+
+    // Toggle Navigasi Mobile
+    function toggleMobileNav() {
+      const menu = document.getElementById("mobileNavMenu");
+      menu.classList.toggle("hidden");
+    }
+
+    // Inisialisasi Pilihan Kota Asal
+    function initOriginSelectOptions() {
+      const originSelect = document.getElementById("originCitySelect");
+      const uniqueOrigins = [...new Set(TARIFF_DATA.map(item => item.origin))].sort();
+      
+      originSelect.innerHTML = "";
+      uniqueOrigins.forEach(city => {
+        const opt = document.createElement("option");
+        opt.value = city;
+        opt.textContent = city;
+        if (city === "PALEMBANG") opt.selected = true;
+        originSelect.appendChild(opt);
+      });
+
+      updateDestinationOptions();
+    }
+
+    // Perbarui Dropdown Kota Tujuan Berdasarkan Kota Asal
+    function updateDestinationOptions(preferDest = null) {
+      const currentOrigin = document.getElementById("originCitySelect").value;
+      const destSelect = document.getElementById("destinationCitySelect");
+      
+      const availableRoutes = TARIFF_DATA.filter(item => item.origin === currentOrigin);
+      destSelect.innerHTML = "";
+
+      if (availableRoutes.length === 0) {
+        const opt = document.createElement("option");
+        opt.value = "";
+        opt.textContent = "Tidak ada rute tujuan";
+        destSelect.appendChild(opt);
+        recalcFormPrice();
+        return;
+      }
+
+      availableRoutes.forEach((route, idx) => {
+        const opt = document.createElement("option");
+        opt.value = route.destination;
+        opt.textContent = `${route.destination} - (${formatIDR(route.price)})`;
+        if (preferDest && route.destination === preferDest) {
+          opt.selected = true;
+        } else if (!preferDest && idx === 0) {
+          opt.selected = true;
+        }
+        destSelect.appendChild(opt);
+      });
+
+      recalcFormPrice();
+    }
+
+    function onOriginCityChanged() {
+      updateDestinationOptions();
+    }
+
+    function onDestinationCityChanged() {
+      recalcFormPrice();
+    }
+
+    // Tukar Rute Asal dan Tujuan
+    function handleSwapRoute() {
+      const currentOrigin = document.getElementById("originCitySelect").value;
+      const currentDest = document.getElementById("destinationCitySelect").value;
+
+      if (!currentDest) return;
+
+      const reverseExists = TARIFF_DATA.some(item => item.origin === currentDest && item.destination === currentOrigin);
+      
+      if (reverseExists) {
+        document.getElementById("originCitySelect").value = currentDest;
+        updateDestinationOptions(currentOrigin);
+      } else {
+        const originHasDest = TARIFF_DATA.some(item => item.origin === currentDest);
+        if (originHasDest) {
+          document.getElementById("originCitySelect").value = currentDest;
+          updateDestinationOptions();
+        } else {
+          alert(`Rute sebaliknya dari ${currentDest} belum terdaftar di sistem reguler.`);
+        }
+      }
+    }
+
+    // Perubahan Jumlah Kursi (+ / -)
+    function changeSeatCount(delta) {
+      const newCount = currentSeats + delta;
+      if (newCount >= 1 && newCount <= 14) {
+        currentSeats = newCount;
+        document.getElementById("seatCountText").textContent = `${currentSeats} Kursi`;
+        document.getElementById("displaySeatMultiplier").textContent = currentSeats;
+        recalcFormPrice();
+      }
+    }
+
+    // Kalkulasi Harga Otomatis Form
+    function recalcFormPrice() {
+      const origin = document.getElementById("originCitySelect").value;
+      const destination = document.getElementById("destinationCitySelect").value;
+
+      const matched = TARIFF_DATA.find(item => item.origin === origin && item.destination === destination);
+      selectedRouteObj = matched || null;
+
+      const singleFareElem = document.getElementById("displaySingleFare");
+      const totalFareElem = document.getElementById("displayTotalFare");
+      const routeDetailElem = document.getElementById("displayRouteDetail");
+
+      if (matched) {
+        const total = matched.price * currentSeats;
+        singleFareElem.textContent = formatIDR(matched.price);
+        totalFareElem.textContent = formatIDR(total);
+        routeDetailElem.innerHTML = `Rute Resmi: <strong>${matched.origin}</strong> &rarr; <strong>${matched.destination}</strong>`;
+      } else {
+        singleFareElem.textContent = "Rp 0";
+        totalFareElem.textContent = "Rp 0";
+        routeDetailElem.innerHTML = `<span class="text-amber-600 font-semibold">Tarif rute khusus/charter langsung hubungi admin</span>`;
+      }
+    }
+
+    // Render Tabel 93 Tarif
+    function renderTariffTable(dataToRender) {
+      const tbody = document.getElementById("tariffTableBody");
+      const countDisplay = document.getElementById("tariffCountDisplay");
+      tbody.innerHTML = "";
+
+      if (dataToRender.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" class="px-6 py-8 text-center text-slate-400">Tidak ada rute yang cocok dengan pencarian Anda.</td></tr>`;
+        countDisplay.textContent = "0";
+        return;
+      }
+
+      countDisplay.textContent = dataToRender.length;
+
+      dataToRender.forEach((item, index) => {
+        const tr = document.createElement("tr");
+        tr.className = "hover:bg-slate-50 transition border-b border-slate-100";
+        tr.innerHTML = `
+          <td class="px-5 py-3.5 font-bold text-slate-400 text-xs">${index + 1}</td>
+          <td class="px-5 py-3.5 font-bold text-slate-800 text-xs sm:text-sm">
+            <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-circle-dot text-[10px] text-emerald-600"></i> ${item.origin}</span>
+          </td>
+          <td class="px-2 py-3.5 text-center text-slate-400 text-xs">&rarr;</td>
+          <td class="px-5 py-3.5 font-bold text-slate-800 text-xs sm:text-sm">
+            <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-[10px] text-red-500"></i> ${item.destination}</span>
+          </td>
+          <td class="px-5 py-3.5 text-right font-extrabold text-brand-700 text-xs sm:text-sm">
+            ${formatIDR(item.price)}
+          </td>
+          <td class="px-5 py-3.5 text-center">
+            <div class="inline-flex items-center gap-1.5">
+              <button onclick="quickSelectRoute('${item.origin}', '${item.destination}')" class="px-3 py-1.5 rounded-lg bg-brand-50 hover:bg-brand-600 hover:text-white text-brand-700 font-bold text-xs transition">
+                Pilih
+              </button>
+              <a href="https://wa.me/${WA_NUMBER}?text=Halo%20Admin%20Berkah%20Travel,%20saya%20ingin%20pesan%20rute%20${encodeURIComponent(item.origin)}%20ke%20${encodeURIComponent(item.destination)}%20(Tarif%20${encodeURIComponent(formatIDR(item.price))})" 
+                 target="_blank" 
+                 class="px-2.5 py-1.5 rounded-lg bg-whatsapp-50 hover:bg-whatsapp-500 hover:text-white text-whatsapp-700 font-bold text-xs transition" title="Pesan Rute via WA">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Filter Kategori Tabel
+    function filterTariffTable(filterType) {
+      activeTableFilter = filterType;
+      
+      document.querySelectorAll(".table-filter-btn").forEach(btn => {
+        btn.classList.remove("bg-brand-600", "text-white", "active");
+        btn.classList.add("bg-white", "text-slate-700");
+      });
+
+      const activeBtnMap = {
+        'ALL': 'filterBtnAll',
+        'PALEMBANG': 'filterBtnPlg',
+        'INDRALAYA': 'filterBtnInd',
+        'JAWA': 'filterBtnJawa',
+        'SUMATERA': 'filterBtnSum'
+      };
+
+      const currBtn = document.getElementById(activeBtnMap[filterType]);
+      if (currBtn) {
+        currBtn.classList.remove("bg-white", "text-slate-700");
+        currBtn.classList.add("bg-brand-600", "text-white", "active");
+      }
+
+      applyTableSearchAndFilter();
+    }
+
+    // Pencarian Instan Tabel
+    function searchTariffTable() {
+      applyTableSearchAndFilter();
+    }
+
+    function applyTableSearchAndFilter() {
+      const keyword = (document.getElementById("tariffTableSearch").value || "").trim().toUpperCase();
+      let filtered = [...TARIFF_DATA];
+
+      if (activeTableFilter === "PALEMBANG") {
+        filtered = filtered.filter(item => item.origin === "PALEMBANG");
+      } else if (activeTableFilter === "INDRALAYA") {
+        filtered = filtered.filter(item => item.origin === "INDRALAYA");
+      } else if (activeTableFilter === "JAWA") {
+        const jawaList = ["JAKARTA", "BANDUNG", "BOGOR", "DEPOK", "TANGERANG", "SEMARANG", "YOGYAKARTA", "SURABAYA", "DENPASAR BALI"];
+        filtered = filtered.filter(item => jawaList.includes(item.origin) || jawaList.includes(item.destination));
+      } else if (activeTableFilter === "SUMATERA") {
+        const jawaList = ["JAKARTA", "BANDUNG", "BOGOR", "DEPOK", "TANGERANG", "SEMARANG", "YOGYAKARTA", "SURABAYA", "DENPASAR BALI"];
+        filtered = filtered.filter(item => !jawaList.includes(item.destination) && !jawaList.includes(item.origin));
+      }
+
+      if (keyword) {
+        filtered = filtered.filter(item => 
+          item.origin.toUpperCase().includes(keyword) || 
+          item.destination.toUpperCase().includes(keyword)
+        );
+      }
+
+      renderTariffTable(filtered);
+    }
+
+    // Pilih Rute Cepat dari Tabel / Footer ke Form Reservasi
+    function quickSelectRoute(origin, destination) {
+      const originSelect = document.getElementById("originCitySelect");
+      originSelect.value = origin;
+      updateDestinationOptions(destination);
+      
+      const formSection = document.getElementById("form-reservasi");
+      if (formSection) {
+        formSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    // Kirim Langsung dari Form ke WhatsApp
+    function sendDirectFormToWhatsApp() {
+      const dateVal = document.getElementById("bookingDateInput").value;
+      if (!dateVal) {
+        alert("Mohon pilih tanggal berangkat terlebih dahulu.");
+        document.getElementById("bookingDateInput").focus();
+        return;
+      }
+
+      const origin = document.getElementById("originCitySelect").value;
+      const destination = document.getElementById("destinationCitySelect").value;
+      const departureTime = document.getElementById("departureTimeSelect").value;
+      const fleet = document.getElementById("fleetTypeSelect").value;
+      const singlePrice = selectedRouteObj ? selectedRouteObj.price : 0;
+      const totalPrice = singlePrice * currentSeats;
+
+      const message = `*HALO BERKAH TRAVEL WISATA*%0A` +
+        `Saya ingin reservasi tiket travel antar kota:%0A%0A` +
+        `• *Rute:* ${origin} ke ${destination}%0A` +
+        `• *Tanggal Berangkat:* ${dateVal}%0A` +
+        `• *Jam Jemput:* ${departureTime}%0A` +
+        `• *Jumlah Kursi:* ${currentSeats} Orang%0A` +
+        `• *Pilihan Armada:* ${fleet}%0A` +
+        `• *Tarif Resmi:* ${formatIDR(singlePrice)} / seat%0A` +
+        `• *Total Estimasi:* ${formatIDR(totalPrice)}%0A%0A` +
+        `Mohon konfirmasi ketersediaan kursi dan penjemputan alamat saya. Terima kasih.`;
+
+      window.open(`https://wa.me/${WA_NUMBER}?text=${message}`, "_blank");
+    }
+
+    // Buka Modal Konfirmasi Checkout Tiket
+    function handleFormDirectOrder(e) {
+      e.preventDefault();
+      
+      const dateVal = document.getElementById("bookingDateInput").value;
+      if (!dateVal) {
+        alert("Pilih tanggal keberangkatan terlebih dahulu.");
+        return;
+      }
+
+      const origin = document.getElementById("originCitySelect").value;
+      const destination = document.getElementById("destinationCitySelect").value;
+      const departureTime = document.getElementById("departureTimeSelect").value;
+      const fleet = document.getElementById("fleetTypeSelect").value;
+      const singlePrice = selectedRouteObj ? selectedRouteObj.price : 0;
+      const totalPrice = singlePrice * currentSeats;
+
+      pendingOrderPayload = {
+        origin,
+        destination,
+        date: dateVal,
+        time: departureTime,
+        fleet,
+        seats: currentSeats,
+        unitPrice: singlePrice,
+        totalPrice: totalPrice,
+        bookingCode: "BRK-TRV-" + Math.floor(10000 + Math.random() * 90000)
+      };
+
+      document.getElementById("modalRouteTitle").textContent = `${origin} ➔ ${destination}`;
+      document.getElementById("modalScheduleInfo").textContent = `${dateVal} • ${departureTime}`;
+      document.getElementById("modalFleetInfo").textContent = fleet;
+      document.getElementById("modalUnitFareInfo").textContent = formatIDR(singlePrice) + " / kursi";
+      document.getElementById("modalSeatCountInfo").textContent = `${currentSeats} Orang`;
+      document.getElementById("modalFinalPriceText").textContent = formatIDR(totalPrice);
+
+      document.getElementById("checkoutModal").classList.remove("hidden");
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById("checkoutModal").classList.add("hidden");
+    }
+
+    // Kirim Checkout ke WhatsApp Langsung
+    function checkoutDirectToWhatsApp() {
+      const name = document.getElementById("custNameInput").value || "Pelanggan";
+      const phone = document.getElementById("custPhoneInput").value || "-";
+      const address = document.getElementById("custPickupAddress").value || "Alamat jemput konfirmasi di chat";
+      const payment = document.querySelector('input[name="paymentOption"]:checked')?.value || "Bayar ke Driver";
+
+      if (!pendingOrderPayload) return;
+
+      const message = `*PEMESANAN TIKET BERKAH TRAVEL WISATA*%0A` +
+        `• *Kode Booking:* ${pendingOrderPayload.bookingCode}%0A` +
+        `• *Nama Penumpang:* ${name}%0A` +
+        `• *No WhatsApp:* ${phone}%0A` +
+        `• *Rute:* ${pendingOrderPayload.origin} ➔ ${pendingOrderPayload.destination}%0A` +
+        `• *Jadwal:* ${pendingOrderPayload.date} (${pendingOrderPayload.time})%0A` +
+        `• *Armada:* ${pendingOrderPayload.fleet}%0A` +
+        `• *Jumlah Kursi:* ${pendingOrderPayload.seats} Penumpang%0A` +
+        `• *Alamat Jemput:* ${address}%0A` +
+        `• *Metode Bayar:* ${payment}%0A` +
+        `• *Total Biaya:* ${formatIDR(pendingOrderPayload.totalPrice)}%0A%0A` +
+        `Mohon segera diproses dan dijadwalkan oleh driver. Terima kasih.`;
+
+      window.open(`https://wa.me/${WA_NUMBER}?text=${message}`, "_blank");
+      closeCheckoutModal();
+    }
+
+    // Proses Buat E-Tiket Virtual
+    function processBookingCheckout(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById("custNameInput").value;
+      const address = document.getElementById("custPickupAddress").value;
+
+      pendingOrderPayload.passengerName = name;
+      pendingOrderPayload.pickupAddress = address;
+      pendingOrderPayload.paymentMethod = document.querySelector('input[name="paymentOption"]:checked').value;
+
+      document.getElementById("ticketDisplayCode").textContent = pendingOrderPayload.bookingCode;
+      document.getElementById("ticketDisplayName").textContent = name;
+      document.getElementById("ticketDisplayRoute").textContent = `${pendingOrderPayload.origin} ➔ ${pendingOrderPayload.destination}`;
+      document.getElementById("ticketDisplaySchedule").textContent = `${pendingOrderPayload.date} (${pendingOrderPayload.time})`;
+      document.getElementById("ticketDisplayFleetSeats").textContent = `${pendingOrderPayload.fleet} (${pendingOrderPayload.seats} Kursi)`;
+      document.getElementById("ticketDisplayPickup").textContent = address;
+      document.getElementById("ticketDisplayTotal").textContent = formatIDR(pendingOrderPayload.totalPrice);
+
+      closeCheckoutModal();
+      document.getElementById("successTicketModal").classList.remove("hidden");
+    }
+
+    function closeSuccessTicketModal() {
+      document.getElementById("successTicketModal").classList.add("hidden");
+    }
+
+    // Kirim E-Tiket yang Terbit ke WhatsApp Admin
+    function sendIssuedTicketToWhatsApp() {
+      if (!pendingOrderPayload) return;
+
+      const message = `*E-TIKET RESMI BERKAH TRAVEL WISATA*%0A` +
+        `• *Kode Booking:* ${pendingOrderPayload.bookingCode}%0A` +
+        `• *Nama Penumpang:* ${pendingOrderPayload.passengerName}%0A` +
+        `• *Rute:* ${pendingOrderPayload.origin} ➔ ${pendingOrderPayload.destination}%0A` +
+        `• *Jadwal:* ${pendingOrderPayload.date} (${pendingOrderPayload.time})%0A` +
+        `• *Armada:* ${pendingOrderPayload.fleet} (${pendingOrderPayload.seats} Penumpang)%0A` +
+        `• *Alamat Jemput:* ${pendingOrderPayload.pickupAddress}%0A` +
+        `• *Cara Bayar:* ${pendingOrderPayload.paymentMethod}%0A` +
+        `• *Total Tarif:* ${formatIDR(pendingOrderPayload.totalPrice)}%0A%0A` +
+        `Saya telah menerbitkan tiket resmi ini via web. Mohon konfirmasi driver penjemput. Terima kasih.`;
+
+      window.open(`https://wa.me/${WA_NUMBER}?text=${message}`, "_blank");
+    }
+
+    // Pesan Armada Spesifik dari Section Armada ke WhatsApp
+    function orderSpecificFleetViaWhatsApp(fleetName) {
+      const message = `*HALO BERKAH TRAVEL WISATA*%0A` +
+        `Saya tertarik dan ingin menyewa/carter unit armada:%0A` +
+        `👉 *${fleetName}*%0A%0A` +
+        `Mohon info ketersediaan unit, tarif harian/drop-off, dan fasilitas driver. Terima kasih.`;
+
+      window.open(`https://wa.me/${WA_NUMBER}?text=${message}`, "_blank");
+    }
+
+    // Inisialisasi Saat Dokumen Siap
+    document.addEventListener("DOMContentLoaded", () => {
+      // Set Default Tanggal Berangkat Besok
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const yyyy = tomorrow.getFullYear();
+      const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+      const dd = String(tomorrow.getDate()).padStart(2, '0');
+      const dateInput = document.getElementById("bookingDateInput");
+      if (dateInput) {
+        dateInput.value = `${yyyy}-${mm}-${dd}`;
+        dateInput.min = `${yyyy}-${mm}-${dd}`;
+      }
+
+      initOriginSelectOptions();
+      renderTariffTable(TARIFF_DATA);
+    });
+  </script>
+</body>
+</html>
